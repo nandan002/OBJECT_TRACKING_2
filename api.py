@@ -70,8 +70,8 @@ def object_track(video, image, bboxes, description, price, objects):
         objects_tracked_list.append([])
 
     # Writing video to the file
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    result = cv2.VideoWriter('filename.avi',
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    result = cv2.VideoWriter('filename.mp4',
                              fourcc,
                              10, (image.shape[1], image.shape[0]))
 
